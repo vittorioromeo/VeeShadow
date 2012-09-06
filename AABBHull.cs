@@ -10,6 +10,7 @@ namespace VeeShadow
     {
         public SSVector2I HalfSize;
         public SSVector2I Position;
+
         #region Shortcut Properties
         public int X { get { return Position.X; } }
         public int Y { get { return Position.Y; } }
@@ -18,6 +19,7 @@ namespace VeeShadow
         public int Top { get { return Position.Y - HalfSize.Y; } }
         public int Bottom { get { return Position.Y + HalfSize.Y; } }
         #endregion
+
         public AABBHull(SSVector2I mPosition, SSVector2I mHalfSize)
         {
             Position = mPosition;
